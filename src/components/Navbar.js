@@ -1,5 +1,6 @@
-import { MdOutlineShoppingBag } from "react-icons/md";
 import { useSelector } from "react-redux";
+import { CartIcon, ChevronDown } from '../icons';
+
 
 function Navbar() {
   const { amount } = useSelector((store) => store.cart);
@@ -9,7 +10,7 @@ function Navbar() {
         <h3>redux toolkit</h3>
         <div className="nav-container">
           <h2>
-            <MdOutlineShoppingBag />
+            <CartIcon />
           </h2>
           <div className="amount-container">
             <p className="total-amount">{amount}</p>
